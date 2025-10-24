@@ -15,6 +15,20 @@ body {
   min-height: 100vh;
 }
 
+/* === LOGO IMAGE === */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  width: 110px;
+  height: auto;
+  object-fit: contain;
+}
+
+
 main {
   flex: 1; /* ensures footer stays at bottom */
 }
@@ -287,6 +301,17 @@ footer {
     color: #ef233c;
   }
 }
+
+@media (max-width: 576px) {
+  .logo-img {
+    width: 90px;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+}
+
 
 /* === RESPONSIVENESS === */
 @media (max-width: 1024px) {
