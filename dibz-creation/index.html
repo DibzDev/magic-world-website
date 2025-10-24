@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAGICWORLD PRODUCTION AGENCY</title>
+    <link rel="stylesheet" href="style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+  <h1 class="logo">Magic<span>World</span> Production</h1>
+
+  <!-- Hamburger Icon (on the right) -->
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+
+  <nav id="nav-menu">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+    <section id="hero">
+        <div class="hero-content">
+        <h2>We Bring Your Vision to Life</h2>
+      <p>Creative solutions in web design, photography, and branding.</p>
+      <a href="#contact" class="btn">Work With Us</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+  <h2>About Us</h2>
+  <p>
+    At <strong>Magicworld Production</strong>, we believe in turning ideas into
+    experiences that move people. Our mission is to help brands grow through
+    modern design, storytelling, and strategy. Whether it's a website, brand identity,
+    or visual content, we bring creativity and precision together.
+  </p>
+</section>
+
+<section id="services" class="services">
+  <h2>Our Services</h2>
+  <div class="service-cards">
+    <div class="service">
+      <h3>Web Design & Development</h3>
+      <p>We build responsive and visually engaging websites that bring your brand to life online.</p>
+    </div>
+    <div class="service">
+      <h3>Photography & Videography</h3>
+      <p>From professional portraits to event coverage — we capture the moments that matter most.</p>
+    </div>
+    <div class="service">
+      <h3>Branding & Strategy</h3>
+      <p>We help you define a visual identity and message that connects authentically with your audience.</p>
+    </div>
+    <div class="service">
+      <h3>Social Media Content</h3>
+      <p>Creative, consistent content strategies that help you grow your digital presence.</p>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio" class="portfolio">
+  <h2>Our Work</h2>
+  <div class="portfolio-grid">
+    <img src="images/RRCIOMRKTNG pstr.jpg" alt="weddings" />
+    <img src="images/BBYSHWRMRKTNG pstr.jpg" alt="birthdays" />
+    <img src="images/WhatsApp Image 2025-10-24 at 18.44.41_66f6e0f1.jpg" alt="personal shoots" />
+    <img src="images/WhatsApp Image 2025-10-24 at 18.47.26_c770f33f.jpg" alt="marketing" />
+  </div>
+</section>
+
+<section id="team" class="team">
+  <h2>Meet Our Team</h2>
+  <div class="team-members">
+    <div class="member">
+      <img src="images/WhatsApp Image 2025-10-24 at 17.55.29_181169d9.jpg" alt="Team Member 1" />
+      <h3>Wilson Mwaliko</h3>
+      <p>Founder & Photographer</p>
+    </div>
+    <div class="member">
+      <img src="images/WhatsApp Image 2025-10-24 at 17.57.09_13be0f18.jpg" alt="Team Member 2" />
+      <h3>Tom Musyoka</h3>
+      <p>Videographer & Lead Developer</p>
+    </div>
+    <!--WAITING FOR CONFIRMATION ON ADDITIONAL MEMBERS-->
+    <!--<div class="member">
+      <img src="images/team3.jpg" alt="Team Member 3" />
+      <h3>Brian K.</h3>
+      <p>Visual Content Specialist</p>
+    </div>
+    <div class="member">
+      <img src="images/team4.jpg" alt="Team Member 4" />
+      <h3>Faith M.</h3>
+      <p>Marketing & Strategy</p>
+    </div>-->
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Let’s Work Together</h2>
+  <p>Have a project in mind? We'd love to hear about it. Get in touch and let’s create something amazing!</p>
+  <a href="https://wa.me/254728589039" target="_blank" class="btn whatsapp-btn">Chat on WhatsApp</a>
+
+</section>
+</main>
+<footer>
+  <p>© 2025 Magic World Digital Agency. All rights reserved.</p>
+</footer>
+
+<script>
+  // Select elements
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+
+  // Toggle navigation visibility
+  menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+
+  // Optional: close menu when clicking a link (for better UX)
+  document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('active');
+    });
+  });
+</script>
+
+
+</body>
+</html>
