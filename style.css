@@ -253,6 +253,25 @@ ul {
   background: #d90429;
 }
 
+.social-links {
+  margin-top: 4rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.social-links a {
+  color: #fff; /* adjust for your theme */
+  font-size: 1.8rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #eeff00; /* your accent color */
+  transform: scale(1.1);
+}
+
+
 /* === FOOTER === */
 footer {
   background: #121212;
